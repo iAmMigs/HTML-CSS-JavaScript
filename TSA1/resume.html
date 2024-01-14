@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+    #resume {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-style: solid;
+        color: black;
+    }
+    
+</style>
+</head>
+<body>
+<button onclick="changeBackgroundColor()" id="button">Click Me!</button>
+
+<div id="resume">
+    <h1>Your Name</h1>
+    <p>Web Developer</p>
+
+    <h2>Contact Information</h2>
+    <p>Email: your@email.com</p>
+    <p>Phone: (555) 555-5555</p>
+
+    <h2>Education</h2>
+    <p>Bachelor of Science in Computer Science, University Name, Graduation Year</p>
+
+    <h2>Experience</h2>
+    <p>Web Developer, XYZ Company, Start Date - End Date</p>
+    <p>Responsibilities and achievements in this role.</p>
+
+    <h2>Skills</h2>
+    <p>HTML, CSS, JavaScript, etc.</p>
+
+    <h2>Projects</h2>
+    <p>Project 1: Description and link (if applicable)</p>
+    <p>Project 2: Description and link (if applicable)</p>
+
+</div>
+
+<script>
+        var colorbg = '#3498db';
+        var colorText = '#fff';
+
+        function changeBackgroundColor() {
+            var resume = document.getElementById("resume");
+
+            // Change the color based on the colorIndex
+            resume.style.backgroundColor = colorbg;
+            resume.style.color = colorText;
+        }
+
+        function changeButton(){
+            var button = document.getElementById("button");
+            button.style.backgroundColor = colorbg;2
+            button.style.color = colorText;
+        }
+    </script>
+
+</body>
+</html>
