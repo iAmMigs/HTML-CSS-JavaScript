@@ -14,5 +14,5 @@ function insertrow(){
 
 function deleterow(r){
     var i = r.parentNode.parentNode.rowIndex;
-    document.getElementById('mytable').deleterow(i);
+    document.getElementById('mytable').deleteRow(i);
 }
