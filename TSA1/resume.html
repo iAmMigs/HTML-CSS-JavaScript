@@ -1,63 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style> 
-    #resume {
-        max-width: 600px;
-        margin: 50px auto;
-        padding: 20px;
-        background-color: #fff;
-        border-style: solid;
-        color: black;
-    }
-    
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSA1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<button onclick="changeBackgroundColor()" id="button">Click Me!</button>
+    <button onclick="changeBackgroundColor()" id="button">Click Me!</button>
 
 <div id="resume">
-    <h1>Your Name</h1>
-    <p>Web Developer</p>
+    <div id="profile-pic"><img src="Images/Grad_Pic.jpg"></div>
+    <h1>Miguel M. Osinada</h1>
+    <div id="web-developer">
+        <p>Web Developer</p>
+    </div>
 
     <h2>Contact Information</h2>
-    <p>Email: your@email.com</p>
+    <p>Email: 202110444@fit.edu.ph</p>
     <p>Phone: (555) 555-5555</p>
+    <p>Address: 14 Pisces Street, Meycauayan City, Bulacan</p>
 
     <h2>Education</h2>
-    <p>Bachelor of Science in Computer Science, University Name, Graduation Year</p>
-
-    <h2>Experience</h2>
-    <p>Web Developer, XYZ Company, Start Date - End Date</p>
-    <p>Responsibilities and achievements in this role.</p>
+    <p>Bachelor of Science in Information Technology Web and Mobile Applications, FEU Institute of Technology</p>
 
     <h2>Skills</h2>
-    <p>HTML, CSS, JavaScript, etc.</p>
+    <p>C++, Java, HTML, etc.</p>
 
     <h2>Projects</h2>
-    <p>Project 1: Description and link (if applicable)</p>
-    <p>Project 2: Description and link (if applicable)</p>
+    <p>Simple Banking Application - Done in Java for Object Oriented Programming</p>
+    <p>Student Record Application with File Handling Capabilities - Done in C++ for Programming 2</p>
 
 </div>
 
 <script>
-        var colorbg = '#3498db';
-        var colorText = '#fff';
+        var colorbgs = ['#3498db', '#e74c3c', '#2ecc71', '#f39c12', '#9b59b6'];
+        var colorTexts = ['#ffffff', '#ffffff', '#ffffff', '#000000', '#ffffff'];
+        var colorIndex = 0;
 
         function changeBackgroundColor() {
             var resume = document.getElementById("resume");
 
-            // Change the color based on the colorIndex
-            resume.style.backgroundColor = colorbg;
-            resume.style.color = colorText;
+            resume.style.backgroundColor = colorbgs[colorIndex];
+            resume.style.color = colorTexts[colorIndex];
+
+            colorIndex = (colorIndex + 1) % colorbgs.length;
         }
 
-        function changeButton(){
-            var button = document.getElementById("button");
-            button.style.backgroundColor = colorbg;2
-            button.style.color = colorText;
-        }
-    </script>
-
+</script>
 </body>
 </html>
