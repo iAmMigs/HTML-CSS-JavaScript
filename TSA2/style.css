@@ -1,0 +1,50 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+
+  .button-container {
+    align-items: left;
+    margin-left: 20px;
+  }
+
+  .day-button {
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: #3498db;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .day-box {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    right: 20px; /* Adjusted to the right side */
+    top: -40px;
+    transition: top 0.5s, background-color 0.3s;
+  }
+
+  #monday-button { background-color: #3498db; }
+  #tuesday-button { background-color: #2ecc71; }
+  #wednesday-button { background-color: #e74c3c; }
+  #thursday-button { background-color: #f39c12; }
+  #friday-button { background-color: #9b59b6; }
+  #saturday-button { background-color: #34495e; }
+  #sunday-button { background-color: #e67e22; }
+
+  #monday-box { background-color: #3498db; }
+  #tuesday-box { background-color: #2ecc71; }
+  #wednesday-box { background-color: #e74c3c; }
+  #thursday-box { background-color: #f39c12; }
+  #friday-box { background-color: #9b59b6; }
+  #saturday-box { background-color: #34495e; }
+  #sunday-box { background-color: #e67e22; }
