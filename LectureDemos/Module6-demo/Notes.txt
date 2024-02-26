@@ -1,2 +1,31 @@
-navbar-expand [sm, md lg, xl]
-    - Breakpoint before the navbar expands/breaks
+To use needs new folder named bootstrap
+Use source
+    needs bootstrap folder with js folder inside
+    needs scss in root folder of projects
+
+Install/edit sass
+    sass-lang.com
+    go to extensions (for vscode)
+    use live sass compiler
+
+In scss file
+    @import"../bootstrap/scss/bootstrap";
+    press watch
+
+Linking
+    <link href=".scss/style.css" rel="stylesheet">
+
+Editing
+    << ! Do not change color in css file ! >>
+    1. (go to scss)
+    2. $primary: [color];
+
+
+----------------------------------
+
+Bootstrap variables
+    1st line
+        @import"./bootstrap/scss/functions";
+    
+    last line
+        @import"../bootstrap/scss/variables";
