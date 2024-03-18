@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .highlighted{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p id="para1" class="highlighted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cumque molestias magnam rerum, ipsum nisi magni odio dicta harum obcaecati, dolores voluptate eligendi mollitia quae ipsam! Explicabo repudiandae corrupti debitis.</p>
+
+    <button id="change">Change</button>
+    <script>
+        document.getElementById("change").addEventListener("click",function(){
+            let para = document.getElementById("para1");
+
+            para.style.backgroundColor = "lightblue";
+            para.style.color = "red";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Classes</title>
+    <style>
+        .highlighted{
+            background-color: yellow;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p name="paragraph">This is paragraph 1</p>
+    <p name="paragraph">This is paragraph 2</p>
+    <p name="paragraph">This is paragraph 3</p>
+
+    <button id="addClass">Add Class</button>
+    <button id="removeClass">Remove Class</button>
+    <script>
+        document.getElementById("addClass").addEventListener("click",function(){
+            let paragraphs = document.querySelectorAll("p[name='paragraph']");
+            //Gets all tags of p, querySelectorID gets only by ID
+
+            paragraphs.forEach(function(p){
+                //Changes Style
+                p.classList.add("highlighted");
+
+            });
+        });
+
+        document.getElementById("removeClass").addEventListener("click",function(){
+            let paragraphs = document.querySelectorAll("p[name='paragraph']:nth-of-type(2)");
+            //:nth-of-type(2) is the second paragraph
+            paragraphs.forEach(function(p){
+                //Changes Style
+                p.classList.remove("highlighted");
+
+            });
+        });
+    </script>
+</body>
+</html>
